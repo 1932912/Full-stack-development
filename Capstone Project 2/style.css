@@ -1,0 +1,93 @@
+
+.image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;;
+    background-image: url("./Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+.cover-page{
+    display: grid;
+    gap:80px;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+    height: 100vh;
+    align-items: center;
+    justify-items: right;
+}
+.content{
+    border-radius: 20px;
+    width: 450px;
+    justify-items: left;
+    align-items: center;
+   margin-right: 120px;
+}
+
+.resume-content{
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-style: italic;
+    text-align: right;
+    font-size: xx-large;
+    justify-items: right;
+    margin-right: 120px;
+}
+    
+.resume-content a{
+    color: black;
+    text-align:right;
+    text-decoration: underline;
+}
+.lead{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-style: italic;
+}
+.experience{
+    display: grid;
+    gap:0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+}
+.Description{
+    grid-column: span 2;
+    line-height: 1.8;
+    padding-top: 20px;
+}
+.Company-name{
+    text-decoration: underline;
+}
+.job-title,.join-date{
+    font-weight: bold;
+}
+.location,.join-date{
+    text-align:  right;
+}
+.education{
+    display: grid;
+    gap:0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.murtaza{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    align-items: center;
+   
+}
+.resume{
+    text-align: right;
+}
+#skills,#experience,#project-experience,#education{
+    background-color: lightgrey;
+}
