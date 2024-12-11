@@ -1,2 +1,14 @@
 
 .DS_Store
+node_modules/.bin/color-support
+node_modules/.bin/mkdirp
+node_modules/.bin/mkdirp
+node_modules/.bin/mkdirp
+node_modules/.bin/resolve
+node_modules/.bin/rimraf
+node_modules
+/node_modules/.bin
+/node_modules
+node_modules/.bin/mkdirp
+node_modules/.bin/mkdirp
+Capstone Project 2/background.jpg
