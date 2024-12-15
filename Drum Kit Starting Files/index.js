@@ -1,10 +1,19 @@
 var n = document.querySelectorAll(".drum").length;
+
 for (var i = 0; i < n; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
 }
 function handleClick() {
   var buttonText = this.innerHTML;
-  switch (buttonText) {
+  sound(buttonText);
+  buttonAnimation(buttonText);
+}
+document.addEventListener("keydown", function (event) {
+  sound(event.key);
+  buttonAnimation(event.key);
+});
+function sound(key) {
+  switch (key) {
     case "w":
       var audio = new Audio("./sounds/crash.mp3");
       audio.play();
@@ -37,4 +46,12 @@ function handleClick() {
       alert("Wrong button pressed!!");
       break;
   }
+}
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
